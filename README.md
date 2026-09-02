@@ -39,6 +39,24 @@ Topic distribution across all 198:
 | Math puzzles | 8 |
 | Debug others' code | 6 |
 
+## Engineering vs research vs trading
+
+These are different hiring processes that happen to share a firm name. The
+dashboard treats the role as a top-level mode rather than a filter, and each
+firm profile shows its three loops separately.
+
+- **Software engineering / quant dev** (142 questions, 32 firms) — the hardest
+  coding bar plus systems depth. C++ object model, memory, concurrency.
+- **Quant research** (42 questions, 31 firms) — a real coding gate plus
+  statistics translated into code: regression, interpolation, Monte Carlo.
+  Full-time loops are decided by take-homes.
+- **Quant trading** (14 questions, 14 firms) — often no coding whatever. Jane
+  Street, SIG, Optiver and IMC test none for trader candidates; probability,
+  mental arithmetic and market-making games decide the outcome.
+
+Where a firm has no reported evidence for a role, the profile says so rather
+than guessing.
+
 ## Findings
 
 ### What works
