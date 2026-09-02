@@ -11,7 +11,7 @@ Compiled September 2026 from 13 parallel research passes.
 
 | Path | What it is |
 |---|---|
-| `dashboard/quant-coding-rounds.html` | The filterable dashboard. Open it in a browser — it is a single self-contained file. |
+| `dashboard/index.html` | The filterable dashboard. Open it in a browser — it is a single self-contained file, no build step. |
 | `data/data.json` | The dataset: 37 firm profiles, 198 reported questions, the prep syllabus. |
 | `research/` | The 13 raw research reports the dataset was distilled from, with source URLs throughout. |
 
@@ -121,3 +121,25 @@ an evidence mark. Two firms are notably thin:
   format.
 
 Open the source before relying on any single row.
+
+## Deploying the dashboard
+
+The dashboard is one self-contained HTML file with no build step, so any static
+host will serve it. `vercel.json` is already configured to serve the `dashboard/`
+directory as the site root.
+
+To put it on Vercel:
+
+1. Go to [vercel.com/new](https://vercel.com/new) and sign in with GitHub.
+2. Import `quant-prep-database`. Vercel will need permission to read it, since
+   the repository is private.
+3. Leave every build setting untouched — `vercel.json` already sets the output
+   directory and disables the framework preset. Do not set a build command.
+4. Deploy. You get `<project-name>.vercel.app` for free, and every push to
+   `main` redeploys automatically.
+
+**A deployed URL is readable by anyone who has it.** A private repository does
+not make the deployment private; Vercel only offers password protection on paid
+plans. `vercel.json` sends `X-Robots-Tag: noindex, nofollow` so search engines
+skip it, which is not access control — it just keeps the page out of results.
+Delete the `headers` block if you would rather it be indexed.
