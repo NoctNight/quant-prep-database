@@ -11,6 +11,8 @@ Compiled September 2026 from 13 parallel research passes.
 
 | Path | What it is |
 |---|---|
+| `syllabus/index.html` | The QR/QT statistics and coding syllabus: 57 items across 14 modules, each with a self-check, plus an explicit list of what to skip. |
+| `data/syllabus.json` | The syllabus content as data. |
 | `dashboard/index.html` | The filterable dashboard. Open it in a browser — it is a single self-contained file, no build step. |
 | `data/data.json` | The dataset: 37 firm profiles, 198 reported questions, the prep syllabus. |
 | `research/` | The 13 raw research reports the dataset was distilled from, with source URLs throughout. |
@@ -38,6 +40,28 @@ Topic distribution across all 198:
 | Recursion / DP | 9 |
 | Math puzzles | 8 |
 | Debug others' code | 6 |
+
+## The syllabus
+
+`syllabus/index.html` is a separate deliverable from the question database: a
+curriculum for quant research and trading covering statistics and coding, with
+57 items across 14 modules. It is deliberately short. An item survives only if
+it is either directly evidenced in the reported interviews, or genuinely used in
+research work; anything failing both tests appears in a "what to skip" section
+with the reason rather than being silently dropped.
+
+Structure: seven statistics modules ordered by dependency (probability,
+stochastic processes, inference, linear models, time series, high-dimensional
+statistics, and a conditional derivatives module for options market makers) and
+seven coding modules (Python, numpy, pandas, statistics implemented from
+scratch, research engineering, algorithms for the assessment gate, SQL). Each
+item states what to know, why it is load-bearing, and the check that tells you
+whether you actually know it.
+
+Nine exclusions are argued explicitly, among them measure-theoretic probability,
+full stochastic calculus for non-options roles, deep learning architectures,
+advanced data structures, and competitive programming beyond Codeforces
+1600-1800.
 
 ## Engineering vs research vs trading
 
