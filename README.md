@@ -11,7 +11,7 @@ Compiled September 2026 from 13 parallel research passes.
 
 | Path | What it is |
 |---|---|
-| `dashboard/index.html` | **The site.** Four tabs: Questions, Firms, Prep plan and Syllabus. A single self-contained file — open it in a browser, no build step. |
+| `dashboard/index.html` | **The site.** Five tabs: Questions, Firms, Prep plan, Syllabus and Resources. A single self-contained file — open it in a browser, no build step. |
 | `data/data.json` | Everything the site renders: 37 firm profiles, 198 reported questions, the prep syllabus and the QR/QT curriculum. |
 | `syllabus/index.html` | The syllabus as a standalone page, for reading it on its own. Same content as the site's Syllabus tab. |
 | `data/syllabus.json` | The curriculum as standalone data. |
@@ -62,6 +62,36 @@ Nine exclusions are argued explicitly, among them measure-theoretic probability,
 full stochastic calculus for non-options roles, deep learning architectures,
 advanced data structures, and competitive programming beyond Codeforces
 1600-1800.
+
+## Resources
+
+The Resources tab reviews 64 learning sites and tools across nine categories,
+each rated essential, strong, situational or skip, with free-versus-paid stated.
+It comes from five parallel research passes weighted toward practitioner opinion
+rather than SEO listicles.
+
+Findings worth knowing before spending money or time:
+
+- **`quantguide.io` and `thequantguide.com` are different products.** The first
+  is a practice site with a substantial free tier and a decent reputation. The
+  second is a course priced around $3,500 with repeated scam allegations.
+- **The quant-prep niche is saturated with AI-generated SEO farms**, identifiable
+  by comparison pages that always favour the host and by template pages refilled
+  without editing.
+- **backtrader is abandoned** — no commits since August 2024, issues disabled —
+  despite 23k stars and near-universal presence in tutorials. Use NautilusTrader
+  or hftbacktest.
+- **Select Star SQL and SQLBolt both omit window functions entirely**, which is
+  the one SQL skill these firms actually test.
+- **Free data has degraded.** Quandl WIKI is frozen at March 2018, Alpha Vantage
+  is down to roughly 25 calls a day, and yfinance is an unsupported scraper. FRED
+  is the standout, and ALFRED serves point-in-time vintages, which is how you
+  avoid look-ahead bias.
+
+On volume, interviewing.io's study of roughly 700 users found problem count
+correlates only 0.27 with interview performance, and about 65% of FAANG engineers
+did fewer than 350 problems. Roughly 300 problems redone under spaced repetition
+beats 800 done once.
 
 ## Engineering vs research vs trading
 
