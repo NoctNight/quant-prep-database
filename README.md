@@ -14,6 +14,8 @@ Compiled September 2026 from 13 parallel research passes.
 | `dashboard/index.html` | **The site.** Five tabs: Questions, Firms, Prep plan, Syllabus and Resources. A single self-contained file — open it in a browser, no build step. |
 | `data/data.json` | Everything the site renders: 37 firm profiles, 198 reported questions, the prep syllabus and the QR/QT curriculum. |
 | `syllabus/index.html` | The syllabus as a standalone page, for reading it on its own. Same content as the site's Syllabus tab. |
+| `drills/index.html` | Twelve estimator and CLT practice problems with hidden solutions, sized for a quant research phone screen. Every numeric answer verified by simulation. |
+| `data/drills.json` | The problem set as data. |
 | `data/syllabus.json` | The curriculum as standalone data. |
 | `research/` | The 13 raw research reports the dataset was distilled from, with source URLs throughout. |
 
